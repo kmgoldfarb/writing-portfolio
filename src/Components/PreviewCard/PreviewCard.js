@@ -1,15 +1,16 @@
 import React from 'react';
-import Auxiliary from '../../HOC/Auxiliary/Auxiliary';
+import { Route, Link } from 'react-router-dom';
 import classes from './PreviewCard.module.css';
+import Post from '../Post/Post';
 
 const PreviewCard = (props) => {
 
         return (
-            <Auxiliary>
+            <Link to={'/posts/' + props.slug}>
                 <div className={classes.title}>{props.title}</div>
                 <div>{props.description}</div>
                 <div>{props.date}</div>
-            </Auxiliary>
+            </Link>
         );
 
     }

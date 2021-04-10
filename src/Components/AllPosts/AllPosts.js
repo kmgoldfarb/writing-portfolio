@@ -1,8 +1,8 @@
 import React from 'react';
-import { Query } from 'react-apollo';
-import POSTS_QUERY from '../AllPosts/index';
-import Post from '../Post/Post';
-import Navbar from '../Navbar/Navbar';
+import { graphql, Query } from 'react-apollo';
+import { Link } from 'react-router-dom';
+import gql from 'graphql-tag';
+import POSTS_QUERY from './Query';
 import PreviewCard from '../PreviewCard/PreviewCard';
 
 const AllPosts = (props) => {
@@ -15,23 +15,32 @@ const AllPosts = (props) => {
 
                     const content = data.posts;
 
+                    const previewPosts = content.map(post => <PreviewCard 
+                        key={post.slug} 
+                        slug={post.slug}
+                        body={post.body.html} 
+                        title={post.title} 
+                        description={post.description}
+                        date={post.date}/>);
+
                     return (
-                        <div>
-                            <Navbar/>
                             <div>
-                                {content.map(post => <PreviewCard 
-                                                        key={post.slug} 
-                                                        body={post.body.html} 
-                                                        title={post.title} 
-                                                        description={post.description}
-                                                        date={post.date}/>)}
+                                {previewPosts}
                             </div>
-                        </div>
                     )
                 }}
             </Query>
         );
+        
     };
 
 
 export default AllPosts;
+
+/* const fullPosts = content.map(post => <Post 
+    key={post.slug} 
+    slug={post.slug}
+    body={post.body.html} 
+    title={post.title} 
+    description={post.description}
+    date={post.date}/>); */

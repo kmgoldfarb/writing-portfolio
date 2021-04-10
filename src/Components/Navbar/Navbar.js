@@ -6,7 +6,6 @@ const Navbar = () => {
         <nav>
             <ol>
                 <li><NavLink to='/' exact>Home</NavLink></li>
-                <li><NavLink to='/posts/'>Posts</NavLink></li>
                 <li><NavLink to='/about/'>About</NavLink></li>
             </ol>
         </nav>
