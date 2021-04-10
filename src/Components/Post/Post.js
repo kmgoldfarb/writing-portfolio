@@ -35,21 +35,15 @@ const Post = (props) => {
                     if (loading) return <div><h3>Loading posts...</h3></div>
                     if (error) return <div><h3>Error loading posts.</h3></div>
 
-                    const content = data.posts;
+                    const content = data;
                     console.log(content);
-                    
-                    const singlePost = content.map(post => 
-                        <FullPost 
-                            key={post.slug} 
-                            slug={post.slug}
-                            body={post.body.html} 
-                            title={post.title} 
-                            description={post.description}
-                            date={post.date} />);
 
                     return (
                         <div>
-                            {singlePost}
+                            <FullPost 
+                                title={content.post.title} 
+                                body={content.post.body.html}
+                                date={content.post.date} />
                         </div>
                     )
             }}    
