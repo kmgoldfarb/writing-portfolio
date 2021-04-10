@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Query, useQuery } from 'react-apollo';
+import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import FullPost from '../FullPost/FullPost';
 

@@ -1,7 +1,5 @@
 import React from 'react';
-import { graphql, Query } from 'react-apollo';
-import { Link } from 'react-router-dom';
-import gql from 'graphql-tag';
+import { Query } from 'react-apollo';
 import POSTS_QUERY from './Query';
 import PreviewCard from '../PreviewCard/PreviewCard';
 
