@@ -1,0 +1,15 @@
+.body {
+    font-family: 'EB Garamond', serif;
+    text-align: left;
+    font-size: 100%;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+}
+
+.date {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}

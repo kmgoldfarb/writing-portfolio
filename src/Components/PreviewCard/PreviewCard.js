@@ -1,15 +1,14 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import classes from './PreviewCard.module.css';
-import Post from '../Post/Post';
 
 const PreviewCard = (props) => {
 
         return (
-            <Link to={'/posts/' + props.slug}>
+            <Link to={'/posts/' + props.slug} className={classes.Link}>
                 <div className={classes.title}>{props.title}</div>
-                <div>{props.description}</div>
-                <div>{props.date}</div>
+                <div className={classes.description}>{props.description}</div>
+                <div className={classes.date}>{props.date}</div>
             </Link>
         );
 

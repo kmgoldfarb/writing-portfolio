@@ -1,3 +1,20 @@
+.Link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #161617;
+}
+
 .title {
-    color: red;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.description {
+    font-family: 'EB Garamond', serif;
+}
+
+.date {
+    font-family: 'Playfair Display', serif;
 }

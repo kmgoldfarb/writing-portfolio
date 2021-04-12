@@ -2,7 +2,7 @@ import gql from 'graphql-tag';
 
 const POSTS_QUERY = gql`
     query {
-        posts {
+        posts (orderBy: date_DESC) {
             title
             slug
             date

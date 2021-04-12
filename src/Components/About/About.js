@@ -20,7 +20,8 @@ function About() {
                     return (
                         <Biography 
                             name={content.biographies[0].name}
-                            body={content.biographies[0].description}
+                            subhead={content.biographies[0].subhead}
+                            body={content.biographies[0].body}
                             image={content.biographies[0].image} /> 
                     );
             }}    

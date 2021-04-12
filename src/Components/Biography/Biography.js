@@ -3,13 +3,16 @@ import classes from './Biography.module.css';
 
 function Biography(props) {
     
-    const htmlText = props.body.html;
-    console.log(htmlText);
+    const bodyHtmlText = props.body.html;
+    const subheadHtmlText = props.subhead.html;
+    console.log(subheadHtmlText);
+
 
     return (
         <div className={classes.profile}>
-            <h1>{props.name}</h1>
-            <div dangerouslySetInnerHTML={{__html: htmlText}} />
+            <div className={classes.name}>{props.name}</div>
+            <div className={classes.subhead} dangerouslySetInnerHTML={{__html: subheadHtmlText}} />
+            <div className={classes.body} dangerouslySetInnerHTML={{__html: bodyHtmlText}} />
             <img alt='Photo of Daniella Goldfarb' src={props.image.url}/>
         </div>
     )

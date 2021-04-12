@@ -4,7 +4,10 @@ const BIO_QUERY = gql`
     query GetBio {
         biographies {
             name
-            description {
+            subhead {
+                html
+            }
+            body {
                 html
             }
             image {
