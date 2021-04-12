@@ -5,10 +5,11 @@ import Navbar from '../Navbar/Navbar';
 import About from '../About/About';
 import Post from '../Post/Post';
 import AllPosts from '../AllPosts/AllPosts';
+import classes from './Blog.css';
 
 function Blog() {
     return (
-        <div>
+        <div className={classes.Blog}>
             <Navbar />
             <div>
                 <Route path='/' exact component={AllPosts} />

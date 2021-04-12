@@ -2,6 +2,7 @@ import React from 'react';
 import { Query } from 'react-apollo';
 import POSTS_QUERY from './Query';
 import PreviewCard from '../PreviewCard/PreviewCard';
+import classes from './AllPosts.module.css'
 
 const AllPosts = (props) => {
         return (
@@ -22,7 +23,7 @@ const AllPosts = (props) => {
                         date={post.date}/>);
 
                     return (
-                            <div>
+                            <div className={classes.HomePosts}>
                                 {previewPosts}
                             </div>
                     )

@@ -2,6 +2,8 @@
     font-family: 'EB Garamond', serif;
     text-align: left;
     font-size: 100%;
+    width: 60%;
+    margin: auto;
 }
 
 .title {
@@ -12,4 +14,5 @@
 .date {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
+    padding-bottom: 1rem;
 }

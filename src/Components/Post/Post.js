@@ -2,6 +2,7 @@ import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import FullPost from '../FullPost/FullPost';
+import classes from './Post.module.css';
 
 const Post = (props) => {
 
@@ -32,7 +33,7 @@ const Post = (props) => {
         <Query query={POST_QUERY} variables={variables}>
             {({loading, error, data}) => {
                     
-                    if (loading) return <div><h3>Loading posts...</h3></div>
+                    if (loading) return <div className={classes.Loading}><h3>Loading posts...</h3></div>
                     if (error) return <div><h3>Error loading posts.</h3></div>
 
                     const content = data;
