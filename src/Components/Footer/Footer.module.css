@@ -1,5 +1,15 @@
-.FooterItem {
-    display: inline;
-    padding: 2rem;
-    font-family: 'EB Garamond', serif;
+.Footer {
+    padding-top: 1rem;
 }
+
+.Footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.FooterItem {
+    font-family: 'EB Garamond', serif;
+    list-style-type: none;
+}
+
+

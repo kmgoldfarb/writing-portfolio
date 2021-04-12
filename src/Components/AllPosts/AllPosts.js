@@ -9,7 +9,7 @@ const AllPosts = (props) => {
             <Query query={POSTS_QUERY}>
                 {({loading, error, data}) => {
                     
-                    if (loading) return <div><h3>Loading posts...</h3></div>
+                    if (loading) return <div className={classes.Loading}><h3>Loading posts...</h3></div>
                     if (error) return <div><h3>Error loading posts.</h3></div>
 
                     const content = data.posts;

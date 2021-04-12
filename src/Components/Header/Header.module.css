@@ -2,7 +2,7 @@
     .TitleName {
         font-family: 'EB Garamond', serif;
         text-transform: uppercase;
-        text-align: left;
+        text-align: center;
         font-weight: bold;
         font-size: 2rem;
         letter-spacing: 2px;
@@ -37,5 +37,5 @@
 }
 
 .LinkName:hover {
-    text-decoration: underline;
+    font-style: italic;
 }

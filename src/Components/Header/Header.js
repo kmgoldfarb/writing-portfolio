@@ -8,7 +8,7 @@ function Header() {
         <div className={classes.Container}>
             <div className={classes.Name}>
                 <Link className={classes.LinkName}to='/' exact>
-                    <div className={classes.TitleName}>Daniella <br />Goldfarb</div>
+                    <div className={classes.TitleName}>Daniella<br />Goldfarb</div>
                 </Link>
             </div>
             <Navbar className={classes.Nav} />
