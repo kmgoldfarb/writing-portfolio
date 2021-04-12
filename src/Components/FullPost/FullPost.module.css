@@ -9,10 +9,17 @@
 .title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
+    padding-top: 1.5rem;
+    text-align: left;
+    width: 60%;
+    margin: auto;
 }
 
 .date {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     padding-bottom: 1rem;
+    text-align: left;
+    width: 60%;
+    margin: auto;
 }

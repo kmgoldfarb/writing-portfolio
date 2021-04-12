@@ -5,14 +5,23 @@
 .name {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
+    text-align: left;
+    width: 50%;
+    margin: auto;
 }
 
 .subhead {
     font-family: 'EB Garamond', serif;
-    font-size: 150%
+    font-size: 150%;
+    text-align: left;
+    width: 50%;
+    margin: auto;
 }
 
 .body {
     font-family: 'EB Garamond', serif;
-    font-size: 100%
+    font-size: 100%;
+    text-align: left;
+    width: 50%;
+    margin: auto;
 }

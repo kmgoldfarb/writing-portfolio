@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+    .TitleName {
+        font-family: 'EB Garamond', serif;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: bold;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .Container {
+        float: left;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .TitleName {
+        font-family: 'EB Garamond', serif;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding-left: 1rem;
+    }
+
+    .Container {
+        display: flex;
+    }
+}
+
+.LinkName {
+    text-decoration: none;
+}
+
+.LinkName:hover {
+    text-decoration: underline;
+}
