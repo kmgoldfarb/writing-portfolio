@@ -6,7 +6,7 @@ import { ApolloProvider } from 'react-apollo';
 import ApolloClient from 'apollo-boost';
 
 const client = new ApolloClient({
-  uri: 'https://api-us-east-1.graphcms.com/v2/ckn99tzng32p101xs362rexs0/master'
+  uri: `https://api-us-east-1.graphcms.com/v2/${process.env.REACT_APP_GQL_KEY}/master`,
 });
 
 ReactDOM.render(
@@ -15,4 +15,3 @@ ReactDOM.render(
   </ApolloProvider>,
   document.getElementById('root')
 );
-
