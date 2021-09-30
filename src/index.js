@@ -6,7 +6,7 @@ import { ApolloProvider } from 'react-apollo';
 import ApolloClient from 'apollo-boost';
 
 const client = new ApolloClient({
-  uri: `https://api-us-east-1.graphcms.com/v2/${process.env.REACT_APP_GQL_KEY}/master`,
+  uri: `${process.env.REACT_APP_API_ENDPOINT}`,
 });
 
 ReactDOM.render(
