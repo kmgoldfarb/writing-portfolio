@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import classes from './PreviewCard.module.css';
 import Image from '../../images/round-arrow-right.png';
 

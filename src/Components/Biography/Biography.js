@@ -1,5 +1,5 @@
-import React from "react";
-import classes from "./Biography.module.css";
+import React from 'react';
+import classes from './Biography.module.css';
 
 function Biography(props) {
   const bodyHtmlText = props.body.html;
@@ -19,7 +19,7 @@ function Biography(props) {
       />
       <img
         className={classes.image}
-        alt="Photo of Daniella Goldfarb"
+        alt="Daniella Goldfarb"
         src={props.image.url}
       />
     </div>

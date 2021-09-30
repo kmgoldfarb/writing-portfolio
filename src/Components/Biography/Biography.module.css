@@ -1,29 +1,48 @@
+@media screen and (max-width: 768px) {
+  .profile {
+    max-width: 85%;
+    margin: auto;
+  }
+  .name {
+    max-width: 85%;
+    margin: auto;
+  }
+  .subhead {
+    max-width: 85%;
+    margin: auto;
+  }
+  .body {
+    max-width: 85%;
+    margin: auto;
+  }
+}
+
 .profile > img {
-  height: 200px;
+  height: 300px;
 }
 
 .name {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
   text-align: left;
-  width: 50%;
   margin: auto;
+  max-width: 60%;
 }
 
 .subhead {
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
   font-size: 175%;
   text-align: left;
-  width: 50%;
   margin: auto;
+  max-width: 60%;
 }
 
 .body {
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
   font-size: 125%;
   text-align: left;
-  width: 50%;
   margin: auto;
+  max-width: 60%;
 }
 
 .image {
